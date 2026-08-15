@@ -1,87 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Personal site blog of Sayantan Guha Roy.">
-    <meta name="keywords" content="sayantangr.net, sayantan guha roy, sayantan, guha roy, sayantangr, 2.5g, 10g, network, blog, blogs, portfolio, shop">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="canonical" href="https://www.sayantangr.net" />
-    <title>Sayantan Guha Roy&#039;s Website </title>
-    
-    <!-- Google Fonts import -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Personal site blog of Sayantan Guha Roy.">
+        <meta name="keywords" content="sayantangr.net, Sayantan Guha Roy, sayantan, guha roy, sayantangr, 2.5gbps, 10gbps, network, blog, portfolio, shop">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.sayantangr.net" />
+   
+   <title>Sayantan Guha Roy&#039;s Website </title>
+  
+  <!-- Google Fonts: Manrope & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --bg-color: #0d1117;
-            --text-color: #c9d1d9;
-            --heading-color: #ffffff;
-            --accent-color: #58a6ff;
-        }
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text-main: #18181b;
+      --text-muted: #52525b;
+      --accent: #2563eb;
+    }
 
-        body {
-            font-family: 'JetBrains Mono', monospace;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.7;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        .container {
-            max-width: 650px;
-            padding: 2.5rem;
-            margin: 1.5rem;
-            background-color: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-        }
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1rem;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+    }
 
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Manrope', sans-serif;
-            color: var(--heading-color);
-            margin-top: 0;
-            letter-spacing: -0.02em;
-        }
+    main {
+      max-width: 640px;
+      width: 100%;
+    }
 
-        .greeting {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--accent-color);
-            margin-bottom: 0.5rem;
-        }
+    .greeting {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      display: inline-block;
+    }
 
-        .title-header {
-            font-size: 2.25rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
+    h1 {
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(2.25rem, 5vw, 3.25rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 2rem;
+      color: var(--text-main);
+    }
 
-        p {
-            font-size: 1rem;
-            margin-bottom: 0;
-        }
-    </style>
+    h1 .title {
+      color: var(--accent);
+      display: block;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      font-weight: 400;
+    }
+  </style>
 </head>
 <body>
 
-    <main class="container">
-        <div class="greeting">Hello 👋</div>
-        <h1 class="title-header">I'm Sayantan — The Web Developer</h1>
-        <p>
-            I started learning to code when I was a teenager, though it was always more of a hobby than a career focus. After a college education in Computer Application, and continuing to pursue that hobby.
-        </p>
-    </main>
+  <main>
+    <span class="greeting">Hello 👋</span>
+    <h1>I'm Sayantan — <span class="title">The Web Developer</span></h1>
+    <p>
+      I started learning to code when I was a teenager, though it was always more of a hobby than a career focus. After a college education in Computer Application, and continuing to pursue that hobby.
+    </p>
+  </main>
 
 </body>
 </html>
